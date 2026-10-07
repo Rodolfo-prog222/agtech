@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AG Tech — Tecnologia Embarcada</title>
+  <meta name="description" content="AG Tech: proteção, conectividade, monitoramento e tecnologia embarcada para motos, carros, caminhonetes, caminhões, tratores e máquinas agrícolas. Base em Santa Helena de Goiás.">
+  <meta name="theme-color" content="#050705">
+  <meta property="og:title" content="AG Tech — Tecnologia Embarcada">
+  <meta property="og:description" content="Conectamos e protegemos veículos, máquinas e operações.">
+  <meta property="og:image" content="assets/img/logo-cena.jpg">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Ícones -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.6-3.4 8.2-8 9-4.6-.8-8-4.4-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+    <symbol id="i-signal" viewBox="0 0 24 24"><path d="M12 12v9M9 21h6"/><circle cx="12" cy="10" r="1.6"/><path d="M8.5 6.5a5 5 0 0 0 0 7M15.5 6.5a5 5 0 0 1 0 7M5.6 3.6a9 9 0 0 0 0 12.8M18.4 3.6a9 9 0 0 1 0 12.8"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M5 16l4-5 4 3 6-8"/><circle cx="19" cy="6" r="1.4"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 7h3.5L9 5h6l1.5 2H20a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.6"/></symbol>
+    <symbol id="i-radio" viewBox="0 0 24 24"><rect x="7" y="8" width="10" height="13" rx="1.5"/><path d="M10 8V3M10 12h4M10 15h4M10 18h1"/></symbol>
+    <symbol id="i-dish" viewBox="0 0 24 24"><path d="M4.5 9.5a8 8 0 0 0 10 10L4.5 9.5z"/><path d="M9.5 14.5L14 10M14 10a2 2 0 1 0 0-.01M16 4a4 4 0 0 1 4 4M16 1a7 7 0 0 1 7 7"/><path d="M8 21h6"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5l-8.8 8.8a2.1 2.1 0 0 1-3-3L16.5 8.5"/><path d="M14.5 6.5a4 4 0 0 1 5-3.3l-2.5 2.5.5 2 2 .5 2.5-2.5a4 4 0 0 1-3.3 5"/></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1"/><rect x="17" y="14" width="4" height="6" rx="1"/><path d="M19 20a3 3 0 0 1-3 2h-3"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></symbol>
+    <symbol id="i-whats" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.4L3 21l4.7-1.2A9 9 0 1 0 12 3z"/><path d="M8.6 8.4c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5l.8 1.9c.1.2 0 .4-.1.6l-.6.7c-.1.1-.2.3 0 .5.6 1 1.6 2 2.7 2.5.2.1.4.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.4 0 .6-.3 1.4-1 1.8-.6.4-1.6.5-3.2-.2-2-.9-3.6-2.8-4.2-3.9-.6-1.1-.6-2.3-.4-3z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3.5 6l8.5 7 8.5-7"/></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  </defs>
+</svg>
+
+<header class="nav" id="topo">
+  <div class="nav-inner">
+    <a class="brand" href="#inicio" aria-label="AG Tech — início">
+      <img src="assets/img/logo.png" alt="AG Tech">
+    </a>
+    <nav class="nav-links" id="menu" aria-label="Principal">
+      <a href="#jornada">Soluções</a>
+      <a href="#pilares">Pilares</a>
+      <a href="#veiculos">Por veículo</a>
+      <a href="#suporte">Instalação</a>
+      <a href="#atendimento">Atendimento</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-sm btn-primary nav-cta" href="https://wa.me/5564993266464?text=Ol%C3%A1%2C%20AG%20Tech!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+      <svg class="ic"><use href="#i-whats"/></svg><span>Orçamento</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO: sequência cinematográfica conduzida pela rolagem -->
+<section class="hero" id="inicio" aria-label="AG Tech — da moto à máquina agrícola">
+  <div class="hero-stage">
+    <div class="frames">
+      <div class="frame" data-pos="38% 60%"><img src="assets/img/seq/moto.jpg" alt="Motocicleta esportiva em garagem urbana"></div>
+      <div class="frame" data-pos="50% 55%"><img src="assets/img/seq/carro.jpg" alt="Carro esportivo com faróis acesos em estacionamento"></div>
+      <div class="frame" data-pos="40% 60%"><img src="assets/img/seq/caminhonete.jpg" alt="Caminhonete em estrada de terra"></div>
+      <div class="frame" data-pos="22% 60%"><img src="assets/img/seq/caminhao.jpg" alt="Caminhão na rodovia"></div>
+      <div class="frame" data-pos="52% 50%"><img src="assets/img/seq/trator.jpg" alt="Trator com implemento no campo"></div>
+      <div class="frame" data-pos="58% 55%"><img src="assets/img/seq/maquina.jpg" alt="Máquina agrícola trabalhando no campo ao pôr do sol"></div>
+      <div class="frame frame-final" data-pos="72% 60%"><img src="assets/img/hero-conectados.jpg" alt="Moto, carro, caminhonete, caminhão, trator e máquina conectados por GPS"></div>
+    </div>
+    <div class="grade" aria-hidden="true"></div>
+    <div class="scan" aria-hidden="true"></div>
+
+    <!-- Rede de conexões que aparece no final -->
+    <svg class="netlines" viewBox="0 0 1600 900" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-20 700 C 300 640, 520 520, 760 470 S 1200 300, 1620 120"/>
+      <path d="M-20 520 C 260 520, 420 430, 640 380 S 1100 330, 1620 380"/>
+      <path d="M200 920 C 420 700, 700 640, 980 560 S 1380 520, 1620 600"/>
+      <path d="M760 470 L 1180 140 M640 380 L 1180 140 M980 560 L 1180 140"/>
+    </svg>
+
+    <!-- HUD -->
+    <div class="hud" aria-hidden="true">
+      <span class="hud-corner tl"></span><span class="hud-corner tr"></span><span class="hud-corner bl"></span><span class="hud-corner br"></span>
+      <div class="hud-read hud-left">
+        <div><b>GPS</b> <span class="blink">●</span> SINAL OK</div>
+        <div>LAT <span data-hud="lat">-17.8131</span></div>
+        <div>LON <span data-hud="lon">-50.5965</span></div>
+      </div>
+      <div class="hud-read hud-right">
+        <div>AMBIENTE <b data-hud="env">CIDADE</b></div>
+        <div>TELEMETRIA <span data-hud="tel">024 km/h</span></div>
+        <div>LINK <span data-hud="link">4G · RF</span></div>
+      </div>
+      <div class="reticle"><span></span></div>
+    </div>
+
+    <!-- Abertura -->
+    <div class="hero-intro">
+      <p class="eyebrow">AG Tech · Santa Helena de Goiás</p>
+      <h1>Tecnologia embarcada<br>para <em>automotores.</em></h1>
+      <p class="lead">Conectamos e protegemos veículos, máquinas e operações — da moto à máquina agrícola.</p>
+      <div class="scroll-hint"><span></span>Role para conhecer</div>
+    </div>
+
+    <!-- Capítulos por veículo -->
+    <div class="chapters" aria-live="polite">
+      <div class="chapter"><span class="ch-num">01</span><h2>Moto</h2><p>Antifurto, rastreamento e bloqueio para duas rodas.</p></div>
+      <div class="chapter"><span class="ch-num">02</span><h2>Carro</h2><p>Localização em tempo real e alerta de movimentação.</p></div>
+      <div class="chapter"><span class="ch-num">03</span><h2>Caminhonete</h2><p>Proteção, câmeras e rádio para quem roda entre cidade e campo.</p></div>
+      <div class="chapter"><span class="ch-num">04</span><h2>Caminhão</h2><p>Gestão de frota, telemetria e controle de rota na rodovia.</p></div>
+      <div class="chapter"><span class="ch-num">05</span><h2>Trator</h2><p>GPS, horímetro e monitoramento da operação no talhão.</p></div>
+      <div class="chapter"><span class="ch-num">06</span><h2>Máquina agrícola</h2><p>Starlink, RFID e dados da lavoura na palma da mão.</p></div>
+    </div>
+
+    <!-- Fechamento -->
+    <div class="hero-final">
+      <p class="eyebrow">Tudo conectado</p>
+      <h2>Uma solução para cada veículo, máquina e operação.</h2>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://wa.me/5564993266464?text=Ol%C3%A1%2C%20AG%20Tech!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg class="ic"><use href="#i-whats"/></svg>Falar no WhatsApp</a>
+        <a class="btn btn-ghost" href="#jornada">Encontrar minha solução <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+
+    <!-- Trilha de progresso -->
+    <ol class="track" aria-hidden="true">
+      <li>Moto</li><li>Carro</li><li>Caminhonete</li><li>Caminhão</li><li>Trator</li><li>Máquina</li><li>Conectados</li>
+    </ol>
+    <div class="track-bar" aria-hidden="true"><span></span></div>
+  </div>
+</section>
+
+<!-- Serviços (faixa) -->
+<section class="services-strip" aria-label="Serviços">
+  <div class="marquee">
+    <div class="marquee-track">
+      <span><svg class="ic"><use href="#i-pin"/></svg>Rastreamento GPS</span>
+      <span><svg class="ic"><use href="#i-signal"/></svg>Telemetria e dados</span>
+      <span><svg class="ic"><use href="#i-camera"/></svg>Câmeras e monitoramento</span>
+      <span><svg class="ic"><use href="#i-radio"/></svg>Rádio comunicação</span>
+      <span><svg class="ic"><use href="#i-dish"/></svg>Starlink</span>
+      <span><svg class="ic"><use href="#i-chip"/></svg>Sistemas embarcados</span>
+      <span><svg class="ic"><use href="#i-gear"/></svg>Automação e integração</span>
+      <span><svg class="ic"><use href="#i-shield"/></svg>Antifurto e RFID</span>
+    </div>
+  </div>
+</section>
+
+<!-- Posicionamento -->
+<section class="section positioning">
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="eyebrow">Novo posicionamento</p>
+      <h2 class="display">Não é só agro.<br>Não é só pesado.<br><em>É tecnologia embarcada.</em></h2>
+    </div>
+    <div class="reveal">
+      <p class="body-lg">A AG Tech conecta e protege veículos, máquinas e operações. Atendemos desde motocicletas e carros de passeio até caminhonetes, caminhões, tratores e máquinas agrícolas.</p>
+      <p>Primeiro entendemos a sua necessidade. Depois indicamos, instalamos e mantemos a tecnologia certa para resolvê-la — com suporte de quem está perto.</p>
+      <ul class="facts">
+        <li><b>6</b><span>categorias de veículos e máquinas</span></li>
+        <li><b>4</b><span>pilares de solução</span></li>
+        <li><b>360°</b><span>instalação, configuração, manutenção e suporte</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Jornada do cliente -->
+<section class="section journey" id="jornada">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Jornada do cliente</p>
+      <h2 class="display">Do que você precisa?</h2>
+      <p>Escolha a sua necessidade. Nós mostramos a tecnologia capaz de resolvê-la.</p>
+    </header>
+
+    <div class="journey-ui reveal">
+      <div class="needs" role="tablist" aria-label="Necessidades">
+        <button role="tab" id="t-proteger" aria-controls="p-proteger" aria-selected="true"><span class="n">01</span>Precisa <b>proteger?</b></button>
+        <button role="tab" id="t-conectar" aria-controls="p-conectar" aria-selected="false" tabindex="-1"><span class="n">02</span>Precisa <b>conectar?</b></button>
+        <button role="tab" id="t-monitorar" aria-controls="p-monitorar" aria-selected="false" tabindex="-1"><span class="n">03</span>Precisa <b>monitorar?</b></button>
+        <button role="tab" id="t-controlar" aria-controls="p-controlar" aria-selected="false" tabindex="-1"><span class="n">04</span>Precisa <b>controlar a operação?</b></button>
+      </div>
+
+      <div class="answers">
+        <article class="answer" role="tabpanel" id="p-proteger" aria-labelledby="t-proteger">
+          <svg class="answer-ic"><use href="#i-shield"/></svg>
+          <h3>Proteção ativa, 24 horas por dia.</h3>
+          <p>Seu veículo localizado em tempo real, com bloqueio remoto e alertas quando algo sai do normal.</p>
+          <ul class="chips"><li>Antifurto</li><li>Rastreamento</li><li>Monitoramento</li></ul>
+          <a class="link-arrow" href="https://wa.me/5564993266464?text=Ol%C3%A1!%20Preciso%20proteger%20meu%20ve%C3%ADculo%20(antifurto%20e%20rastreamento)." target="_blank" rel="noopener">Quero proteger meu veículo <svg class="ic"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="answer" role="tabpanel" id="p-conectar" aria-labelledby="t-conectar" hidden>
+          <svg class="answer-ic"><use href="#i-dish"/></svg>
+          <h3>Sinal onde a operação estiver.</h3>
+          <p>Internet via satélite e comunicação por rádio para fazenda, frota e equipe — mesmo longe da cidade.</p>
+          <ul class="chips"><li>Starlink</li><li>Rádio</li><li>Conectividade</li></ul>
+          <a class="link-arrow" href="https://wa.me/5564993266464?text=Ol%C3%A1!%20Preciso%20de%20conectividade%20(Starlink%20%2F%20r%C3%A1dio)." target="_blank" rel="noopener">Quero conectar minha operação <svg class="ic"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="answer" role="tabpanel" id="p-monitorar" aria-labelledby="t-monitorar" hidden>
+          <svg class="answer-ic"><use href="#i-chart"/></svg>
+          <h3>Veja tudo o que acontece.</h3>
+          <p>Posição, velocidade, uso e imagens de cada veículo ou máquina, reunidos em um só lugar.</p>
+          <ul class="chips"><li>GPS</li><li>Telemetria</li><li>Câmeras</li><li>Sensores</li></ul>
+          <a class="link-arrow" href="https://wa.me/5564993266464?text=Ol%C3%A1!%20Preciso%20monitorar%20meus%20ve%C3%ADculos%2Fm%C3%A1quinas." target="_blank" rel="noopener">Quero monitorar <svg class="ic"><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="answer" role="tabpanel" id="p-controlar" aria-labelledby="t-controlar" hidden>
+          <svg class="answer-ic"><use href="#i-chip"/></svg>
+          <h3>Controle total da operação.</h3>
+          <p>Tecnologia embarcada integrada à telemetria e ao rastreamento para decisões baseadas em dados reais.</p>
+          <ul class="chips"><li>Tecnologia embarcada</li><li>Telemetria</li><li>Rastreamento</li></ul>
+          <a class="link-arrow" href="https://wa.me/5564993266464?text=Ol%C3%A1!%20Quero%20controlar%20minha%20opera%C3%A7%C3%A3o%20com%20tecnologia%20embarcada." target="_blank" rel="noopener">Quero controlar minha operação <svg class="ic"><use href="#i-arrow"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Transição: cidade -->
+<section class="band" aria-hidden="true">
+  <div class="band-img" style="background-image:url('assets/img/bg/cidade.jpg')"></div>
+  <div class="band-copy"><span>Da cidade</span><span class="dim">à rodovia</span></div>
+</section>
+
+<!-- Quatro pilares -->
+<section class="section pillars" id="pilares">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Quatro pilares da AG Tech</p>
+      <h2 class="display">O que entregamos.</h2>
+    </header>
+    <div class="pillar-grid">
+      <article class="pillar reveal">
+        <span class="p-idx">01</span>
+        <svg class="p-ic"><use href="#i-shield"/></svg>
+        <h3>Proteção</h3>
+        <p>Antifurto • Rastreamento • RFID • Câmeras</p>
+      </article>
+      <article class="pillar reveal">
+        <span class="p-idx">02</span>
+        <svg class="p-ic"><use href="#i-signal"/></svg>
+        <h3>Conectividade</h3>
+        <p>Starlink • Rádio • Comunicação</p>
+      </article>
+      <article class="pillar reveal">
+        <span class="p-idx">03</span>
+        <svg class="p-ic"><use href="#i-chart"/></svg>
+        <h3>Inteligência</h3>
+        <p>Telemetria • GPS • Monitoramento</p>
+      </article>
+      <article class="pillar reveal">
+        <span class="p-idx">04</span>
+        <svg class="p-ic"><use href="#i-chip"/></svg>
+        <h3>Tecnologia embarcada</h3>
+        <p>Soluções para veículos, frotas e máquinas</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Soluções por veículo -->
+<section class="section vehicles" id="veiculos">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Soluções por veículo</p>
+      <h2 class="display">Escolha o seu.</h2>
+      <p>Cada perfil tem uma combinação ideal de proteção, conectividade e inteligência.</p>
+    </header>
+  </div>
+  <div class="v-rail">
+    <article class="v-card reveal">
+      <img src="assets/img/seq/moto.jpg" alt="" loading="lazy">
+      <div class="v-body">
+        <span class="v-tag">Duas rodas</span>
+        <h3>Motocicletas</h3>
+        <ul><li>Rastreador compacto</li><li>Bloqueio remoto</li><li>Alerta de movimento</li></ul>
+      </div>
+    </article>
+    <article class="v-card reveal">
+      <img src="assets/img/seq/carro.jpg" alt="" loading="lazy">
+      <div class="v-body">
+        <span class="v-tag">Veículos leves</span>
+        <h3>Carros de passeio</h3>
+        <ul><li>Rastreamento em tempo real</li><li>Antifurto</li><li>Câmeras</li></ul>
+      </div>
+    </article>
+    <article class="v-card reveal">
+      <img src="assets/img/seq/caminhonete.jpg" alt="" loading="lazy">
+      <div class="v-body">
+        <span class="v-tag">Caminhonetes</span>
+        <h3>Cidade e campo</h3>
+        <ul><li>Rastreamento e RFID</li><li>Rádio comunicação</li><li>Câmeras</li></ul>
+      </div>
+    </article>
+    <article class="v-card reveal">
+      <img src="assets/img/seq/caminhao.jpg" alt="" loading="lazy" style="--op: 22% center">
+      <div class="v-body">
+        <span class="v-tag">Caminhões</span>
+        <h3>Frotas e transporte</h3>
+        <ul><li>Telemetria</li><li>Gestão de frota</li><li>Câmeras e sensores</li></ul>
+      </div>
+    </article>
+    <article class="v-card reveal">
+      <img src="assets/img/seq/trator.jpg" alt="" loading="lazy">
+      <div class="v-body">
+        <span class="v-tag">Máquinas agrícolas</span>
+        <h3>Tratores e implementos</h3>
+        <ul><li>GPS e telemetria</li><li>Starlink no campo</li><li>Automação e integração</li></ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- Transição: campo -->
+<section class="band" aria-hidden="true">
+  <div class="band-img" style="background-image:url('assets/img/bg/campo.jpg')"></div>
+  <div class="band-copy"><span>Do transporte</span><span class="dim">ao campo</span></div>
+</section>
+
+<!-- Instalação e suporte -->
+<section class="section support" id="suporte">
+  <div class="support-bg" style="background-image:url('assets/img/bg/instalacao.jpg')" aria-hidden="true"></div>
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Instalação e suporte</p>
+      <h2 class="display">Do primeiro parafuso<br>ao suporte contínuo.</h2>
+    </header>
+    <ol class="steps">
+      <li class="reveal"><svg class="ic-lg"><use href="#i-wrench"/></svg><span class="s-n">01</span><h3>Instalação</h3><p>Montagem limpa e segura, feita por técnicos especializados.</p></li>
+      <li class="reveal"><svg class="ic-lg"><use href="#i-sliders"/></svg><span class="s-n">02</span><h3>Configuração</h3><p>Equipamentos, plataformas e alertas ajustados para a sua operação.</p></li>
+      <li class="reveal"><svg class="ic-lg"><use href="#i-gear"/></svg><span class="s-n">03</span><h3>Manutenção</h3><p>Revisões e correções para manter tudo funcionando.</p></li>
+      <li class="reveal"><svg class="ic-lg"><use href="#i-headset"/></svg><span class="s-n">04</span><h3>Suporte técnico</h3><p>Atendimento próximo, sempre que você precisar.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Atendimento -->
+<section class="section region" id="atendimento">
+  <div class="region-bg" style="background-image:url('assets/img/bg/regiao.jpg')" aria-hidden="true"></div>
+  <div class="wrap split">
+    <div class="reveal">
+      <p class="eyebrow">Atendimento</p>
+      <h2 class="display">Base em <em>Santa Helena de Goiás.</em></h2>
+      <p class="body-lg">Atendemos Santa Helena de Goiás e toda a região — e levamos a AG Tech até você, em qualquer lugar do Brasil.</p>
+      <ul class="badges">
+        <li><svg class="ic"><use href="#i-pin"/></svg>Base em <b>Santa Helena de Goiás</b></li>
+        <li><svg class="ic"><use href="#i-home"/></svg>Atendemos em <b>sua propriedade</b></li>
+        <li><svg class="ic"><use href="#i-globe"/></svg>Atendemos em <b>todo o Brasil</b></li>
+      </ul>
+    </div>
+    <div class="radar reveal" aria-hidden="true">
+      <svg viewBox="0 0 400 400">
+        <defs>
+          <radialGradient id="rg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#9ee52b" stop-opacity=".22"/><stop offset="1" stop-color="#9ee52b" stop-opacity="0"/></radialGradient>
+          <linearGradient id="sweep" x1="0" x2="1"><stop offset="0" stop-color="#9ee52b" stop-opacity="0"/><stop offset="1" stop-color="#9ee52b" stop-opacity=".28"/></linearGradient>
+        </defs>
+        <circle cx="200" cy="200" r="190" fill="url(#rg)"/>
+        <g class="rings"><circle cx="200" cy="200" r="190"/><circle cx="200" cy="200" r="140"/><circle cx="200" cy="200" r="90"/><circle cx="200" cy="200" r="40"/><path d="M10 200h380M200 10v380"/></g>
+        <g class="sweep"><path d="M200 200 L390 200 A190 190 0 0 0 334 66 Z" fill="url(#sweep)"/></g>
+        <g class="towns">
+          <circle cx="92" cy="196" r="3"/><text x="40" y="184">Rio Verde</text>
+          <circle cx="238" cy="96" r="3"/><text x="246" y="92">Acreúna</text>
+          <circle cx="268" cy="244" r="3"/><text x="276" y="240">Maurilândia</text>
+          <circle cx="330" cy="70" r="3"/><text x="300" y="56">Goiânia ↗</text>
+        </g>
+        <g class="home-pin"><circle cx="200" cy="200" r="9"/><circle cx="200" cy="200" r="22" class="pulse"/></g>
+        <text x="214" y="196" class="home-label">SANTA HELENA DE GOIÁS</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- Contato -->
+<section class="section contact" id="contato">
+  <div class="wrap contact-grid">
+    <div class="contact-copy reveal">
+      <p class="eyebrow">Contato</p>
+      <h2 class="display">Vamos conectar<br>a sua operação?</h2>
+      <p class="body-lg">Fale com a equipe comercial e receba um orçamento para o seu veículo, máquina ou frota.</p>
+      <a class="btn btn-primary btn-xl" href="https://wa.me/5564993266464?text=Ol%C3%A1%2C%20AG%20Tech!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener"><svg class="ic"><use href="#i-whats"/></svg>(64) 99326-6464</a>
+      <ul class="contact-list">
+        <li><svg class="ic"><use href="#i-mail"/></svg><a href="mailto:agtech.commercial@gmail.com">agtech.commercial@gmail.com</a></li>
+        <li><svg class="ic"><use href="#i-insta"/></svg><a href="https://www.instagram.com/_ag_tech_/" target="_blank" rel="noopener">@_ag_tech_</a></li>
+        <li><svg class="ic"><use href="#i-pin"/></svg><span>Santa Helena de Goiás — GO</span></li>
+      </ul>
+    </div>
+
+    <form class="quote reveal" id="orcamento" novalidate>
+      <div class="quote-head"><span class="dot"></span>Pedido de orçamento</div>
+      <label>Seu nome<input name="nome" autocomplete="name" required placeholder="Como podemos te chamar?"></label>
+      <label>Cidade<input name="cidade" autocomplete="address-level2" placeholder="Ex.: Santa Helena de Goiás"></label>
+      <fieldset>
+        <legend>Veículo ou máquina</legend>
+        <div class="opts">
+          <label><input type="checkbox" name="veiculo" value="Moto"><span>Moto</span></label>
+          <label><input type="checkbox" name="veiculo" value="Carro"><span>Carro</span></label>
+          <label><input type="checkbox" name="veiculo" value="Caminhonete"><span>Caminhonete</span></label>
+          <label><input type="checkbox" name="veiculo" value="Caminhão / frota"><span>Caminhão / frota</span></label>
+          <label><input type="checkbox" name="veiculo" value="Trator"><span>Trator</span></label>
+          <label><input type="checkbox" name="veiculo" value="Máquina agrícola"><span>Máquina agrícola</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Interesse</legend>
+        <div class="opts">
+          <label><input type="checkbox" name="interesse" value="Proteção"><span>Proteção</span></label>
+          <label><input type="checkbox" name="interesse" value="Conectividade"><span>Conectividade</span></label>
+          <label><input type="checkbox" name="interesse" value="Inteligência / telemetria"><span>Inteligência</span></label>
+          <label><input type="checkbox" name="interesse" value="Tecnologia embarcada"><span>Tecnologia embarcada</span></label>
+        </div>
+      </fieldset>
+      <label>Mensagem<textarea name="msg" rows="3" placeholder="Conte um pouco sobre a sua necessidade"></textarea></label>
+      <button class="btn btn-primary btn-block" type="submit"><svg class="ic"><use href="#i-whats"/></svg>Enviar pelo WhatsApp</button>
+      <p class="form-note" role="status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <img class="footer-logo" src="assets/img/logo-tecnologia-embarcada.jpg" alt="AG Tech — Tecnologia Embarcada" loading="lazy" width="1000" height="1000">
+    <div>
+      <p class="footer-tag">AG TECH<br><b>TECNOLOGIA EMBARCADA.</b></p>
+      <p class="footer-services">Instalação • Configuração • Manutenção • Suporte técnico</p>
+    </div>
+    <div class="footer-contact">
+      <a href="https://wa.me/5564993266464" target="_blank" rel="noopener">(64) 99326-6464</a>
+      <a href="mailto:agtech.commercial@gmail.com">agtech.commercial@gmail.com</a>
+      <a href="https://www.instagram.com/_ag_tech_/" target="_blank" rel="noopener">@_ag_tech_</a>
+    </div>
+  </div>
+  <p class="copy">© <span id="ano">2026</span> AG Tech · Santa Helena de Goiás — GO</p>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5564993266464?text=Ol%C3%A1%2C%20AG%20Tech!" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg><use href="#i-whats"/></svg></a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
